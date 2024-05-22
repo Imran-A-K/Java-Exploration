@@ -1,6 +1,6 @@
 package Advanced.Interface;
 interface A {
-    int num = 4;
+    int number = 4;
     void show();
 }
 interface B{
@@ -17,7 +17,7 @@ class C  implements AC,B{
 }
 public class InterfaceDemo {
     public static void main(String[] args) {
-        System.out.println(AC.num);// because variable is static
+        System.out.println(A.number);// because variable is static
          C c = new C();
          c.display();
          c.show(); 

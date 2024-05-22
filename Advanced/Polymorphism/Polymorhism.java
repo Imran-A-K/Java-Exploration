@@ -1,5 +1,5 @@
 package Advanced.Polymorphism;
-class Aeroplane{
+class Aeroplane2{
     public void takeOff(){
         System.out.println("Aeroplane taking off");
 
@@ -9,7 +9,7 @@ class Aeroplane{
     }
 }
 
-class FighterJet extends Aeroplane{
+class FighterJet2 extends Aeroplane2{
     @Override
     public void takeOff(){
         System.out.println("Fighter Jet taking off with afterburner");
@@ -18,7 +18,7 @@ class FighterJet extends Aeroplane{
         System.out.println("Fighter Jets flies with style");
     }
 }
-class CargoPlane extends Aeroplane{
+class CargoPlaneNew extends Aeroplane2{
     @Override
     public void takeOff(){
       System.out.println("Cargo plane is taking off");  
@@ -27,7 +27,7 @@ class CargoPlane extends Aeroplane{
         System.out.println("Cargo plane is carrying load");
     }
 }
-class PassengerPlane extends Aeroplane{
+class PassengerPlane extends Aeroplane2{
     @Override
     public void takeOff(){
       System.out.println("Passenger plane is taking off");  
@@ -38,7 +38,7 @@ class PassengerPlane extends Aeroplane{
 }
 
 class Airpport{
-    public void poly(Aeroplane ref){
+    public void poly(Aeroplane2 ref){
         ref.fly();
         ref.takeOff();
 
@@ -47,10 +47,10 @@ class Airpport{
 }
 public class Polymorhism {
     public static void main(String[] args) {
-        // you can also write Aeroplane cargoPlane = new CargoPlane(); because Aeroplane is parent class
-        CargoPlane cargoPlane = new CargoPlane();
+        // you can also write Aeroplane cargoPlane = new CargoPlaneNew(); because Aeroplane is parent class
+        CargoPlaneNew cargoPlane = new CargoPlaneNew();
         PassengerPlane passengerPlane = new PassengerPlane();
-        FighterJet fighterJet = new FighterJet();
+        FighterJet2 fighterJet = new FighterJet2();
         Airpport airport = new Airpport();
 // runtime polymorphism
         airport.poly(cargoPlane);

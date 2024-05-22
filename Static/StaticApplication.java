@@ -16,7 +16,7 @@ rateOfInterest=8.5f;
         principalAmount = scan.nextInt();
         System.out.println("Please mention time duration ");
         timeDuration=scan.nextFloat();
-        
+        scan.close();
     }
     void compute(){
         simpleInterest=(principalAmount*rateOfInterest*timeDuration)/100f;

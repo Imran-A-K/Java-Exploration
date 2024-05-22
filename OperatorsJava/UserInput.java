@@ -12,6 +12,6 @@ public class UserInput {
         System.out.println("Enter average");
         double avg = scan.nextDouble();
         System.out.println("Average is " + avg);
-
+        scan.close();
     }
 }

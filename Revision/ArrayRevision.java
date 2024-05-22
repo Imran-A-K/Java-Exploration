@@ -35,5 +35,6 @@ int studentsCount = sc.nextInt();
             }
             System.out.println();
         }
+        sc.close();
     }
 }

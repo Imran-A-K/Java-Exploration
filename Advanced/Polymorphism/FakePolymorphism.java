@@ -9,7 +9,7 @@ class Aeroplane{
     }
 }
 
-class FighterJet extends Aeroplane{
+class FighterJet extends Aeroplane2{
     @Override
     public void takeOff(){
         System.out.println("Fighter Jet taking off with afterburner");
@@ -18,7 +18,7 @@ class FighterJet extends Aeroplane{
         System.out.println("Fighter Jets flies with style");
     }
 }
-class CargoPlane extends Aeroplane{
+class CargoPlane extends Aeroplane2{
     @Override
     public void takeOff(){
       System.out.println("Cargo plane is taking off");  
@@ -32,7 +32,7 @@ public class FakePolymorphism {
         CargoPlane cp = new CargoPlane();
         FighterJet fj = new FighterJet();
 
-        Aeroplane ref;
+        Aeroplane2 ref;
 
         ref=cp;
         ref.takeOff();

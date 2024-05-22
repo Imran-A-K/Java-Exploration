@@ -8,6 +8,7 @@ class Guesser{
         Scanner scan = new Scanner(System.in);
         System.out.println("Guesser Kindly guess the number");
         guessNum = scan.nextInt();
+        scan.close();
         return guessNum;
     }
 }
@@ -17,6 +18,7 @@ class Player{
         Scanner scan = new Scanner(System.in);
         System.out.println("Player please guess the number");
         guessNum = scan.nextInt();
+        scan.close();
         return guessNum;
     }
 }
